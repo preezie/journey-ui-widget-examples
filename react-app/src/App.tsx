@@ -2,10 +2,10 @@ import './App.css'
 
 import { Link, Outlet, Route, Routes } from 'react-router-dom'
 
-import Cta from './widgets/Cta'
-import ExitIntent from './widgets/Exit-intent'
-import Popup from './widgets/Popup'
-import Workflow from './widgets/Workflow'
+import Cta from './cta'
+import ExitIntent from './exit-intent'
+import Popup from './popup'
+import Workflow from './workflow'
 
 declare global {
   interface Window {
