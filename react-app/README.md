@@ -26,5 +26,3 @@ window.PREEZIE_GUIDE.render([
     },
 ]);
 ```
-
-# preezie_widget_implementation_samples
