@@ -17,12 +17,3 @@ script: [{ src: "https://preeziecdn.azureedge.net/production/preguide.min.js" }]
 
 In `pages` folder, you can find recommended widget's implementations for a nuxtjs application in each page.
 
-```sh
-window.PREEZIE_GUIDE.render([
-    {
-    guideKey: "7d51c584-ad76-4253-2fd8-08d9719d685d",
-    version: "1.0.0",
-    renderTo: "preezie-widget-div-id",
-    },
-]);
-```
