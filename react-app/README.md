@@ -16,13 +16,3 @@ In the public folder, you can find a [preguide.min](https://preeziecdn.azureedge
 ### `code snippet`
 
 In the project directory, you can find recommended widget's implementations for a react application in the `app` component.
-
-```sh
-window.PREEZIE_GUIDE.render([
-    {
-    guideKey: "7d51c584-ad76-4253-2fd8-08d9719d685d",
-    version: "1.0.0",
-    renderTo: "preezie-widget-div-id",
-    },
-]);
-```
