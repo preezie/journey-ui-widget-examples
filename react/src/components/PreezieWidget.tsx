@@ -1,12 +1,13 @@
+"use client" // COMMENT THIS WHOLE LINE OUT IF YOU ARE NOT USING NEXTJS
 import { useEffect, useRef } from "react"
 
-interface UseWidgetProps {
+interface Props {
   widgetIds: string[]
   targetElements: string[]
   isAfter: boolean[]
 }
 
-export const usePreezieWidget = (props: UseWidgetProps) => {
+const PreezieWidget = (props: Props) => {
   const scriptMountedRef = useRef(false)
 
   useEffect(() => {
@@ -19,6 +20,7 @@ export const usePreezieWidget = (props: UseWidgetProps) => {
     script.dataset.widgetid = props.widgetIds.join(",")
     script.dataset.targets = props.targetElements.join(",")
     script.dataset.isafter = props.isAfter.join(",")
+
     document.body.appendChild(script)
 
     script.onload = () => {
@@ -27,9 +29,9 @@ export const usePreezieWidget = (props: UseWidgetProps) => {
     }
 
     scriptMountedRef.current = true
+  }, [props])
 
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
+  return null
 }
+
+export default PreezieWidget
