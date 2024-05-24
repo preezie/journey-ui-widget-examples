@@ -1,4 +1,5 @@
-"use client" // COMMENT THIS WHOLE LINE OUT IF YOU ARE NOT USING NEXTJS
+"use client" // COMMENT THIS LINE OUT IF YOU ARE USING NEXT VERSION 12 OR BELOW, OR A VANILLA REACT FRAMEWORK.
+
 import { useEffect, useRef } from "react"
 
 interface Props {
