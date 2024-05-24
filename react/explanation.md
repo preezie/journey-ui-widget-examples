@@ -18,6 +18,8 @@ Import the `PreezieWidget` component into the file where you want to use it:
 
 Place the `PreezieWidget` component within the JSX structure where you want the widget to appear. Pass the required props (`widgetIds`, `targetElements`, `isAfter`) to the component.
 
+Make sure the element you want to render the widget inside / around of is in the same component tree
+
 ```javascript
 import PreezieWidget from "@/components/PreezieWidget"
 
